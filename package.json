@@ -1,0 +1,20 @@
+{
+  "name": "dlicense",
+  "description": "Check the licenses of the installed dependencies",
+  "version": "1.0.0",
+  "homepage": "http://github.com/dnode/dlicense",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "preferGlobal": true,
+  "bin": {
+    "dlicense": "src/cli.js"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "nlf": "^1.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnode/dlicense.git"
+  }
+}
