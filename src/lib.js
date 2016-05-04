@@ -9,10 +9,10 @@ module.exports = (config, callback) => {
   config.proprietaries = config.proprietaries || [];
   config.ignores = config.ignores || [];
   nlf.find(config.nlf, (err, data) => {
-    let invalids = [];
-    for (let moduleData of data) {
+    const invalids = [];
+    for (const moduleData of data) {
       let valid = false;
-      for (let license of moduleData.summary()) {
+      for (const license of moduleData.summary()) {
         if (license == 'proprietary' && config.proprietaries.indexOf(moduleData.name) !== -1) {
           valid = true;
         } else if (config.licenses.indexOf(license) !== -1) {
